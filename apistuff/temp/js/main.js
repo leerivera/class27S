@@ -16,8 +16,9 @@ function getFetch(){
         // }else if(data.media_type === 'video'){
         //   document.querySelector('iframe').src = data.url
         // }
-       
-        // document.querySelector('h3').innerText = data.explanation
+        document.querySelector('h2').innerText = data.anime
+        document.querySelector('h1').innerText = data.quote
+        document.querySelector('h3').innerText = data.character
       })
       .catch(err => {
           console.log(`error ${err}`)
